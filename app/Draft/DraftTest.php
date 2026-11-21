@@ -76,6 +76,7 @@ class DraftTest extends TestCase
         $data = $draft->toArray();
 
         $this->assertSame($draft->settings->toArray(), $data['config']);
+        $this->assertSame(PersistableDraft::MODE_MILTY, $data['mode']);
         $this->assertSame($draft->id, $data['id']);
         $this->assertSame($draft->isDone, $data['done']);
         $this->assertSame($player->name, $data['draft']['players'][$player->id->value]['name']);
@@ -123,5 +124,17 @@ class DraftTest extends TestCase
         // it sets the draft to done at the end
         $this->assertNull($draft->currentPlayerId);
         $this->assertTrue($draft->isDone);
+    }
+
+    #[Test]
+    #[DataProviderExternal(TestDrafts::class, 'provideSingleTestDraft')]
+    public function itIsAPersistableMiltyDraft($data): void
+    {
+        $draft = Draft::fromJson($data);
+
+        $this->assertInstanceOf(PersistableDraft::class, $draft);
+        $this->assertSame(PersistableDraft::MODE_MILTY, $draft->mode());
+        $this->assertSame($draft->id, $draft->id());
+        $this->assertSame(PersistableDraft::MODE_MILTY, json_decode($draft->toFileContent(), true)['mode']);
     }
 }

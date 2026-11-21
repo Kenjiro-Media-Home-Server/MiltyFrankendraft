@@ -7,7 +7,7 @@ namespace App\Draft;
 use App\TwilightImperium\Faction;
 use App\TwilightImperium\Tile;
 
-class Draft
+class Draft implements PersistableDraft
 {
     public function __construct(
         // @todo implement DraftId value object
@@ -81,6 +81,21 @@ class Draft
         }, $factionNames);
     }
 
+    public function id(): string
+    {
+        return $this->id;
+    }
+
+    public function mode(): string
+    {
+        return self::MODE_MILTY;
+    }
+
+    public function secrets(): Secrets
+    {
+        return $this->secrets;
+    }
+
     public function toFileContent(): string
     {
         return json_encode($this->toArray(true));
@@ -90,6 +105,7 @@ class Draft
     {
         $data = [
             'id' => $this->id,
+            'mode' => $this->mode(),
             'done' => $this->isDone,
             'config' => $this->settings->toArray(),
             'draft' => [

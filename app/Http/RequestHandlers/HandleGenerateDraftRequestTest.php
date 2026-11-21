@@ -6,6 +6,8 @@ namespace App\Http\RequestHandlers;
 
 use App\Draft\Commands\GenerateDraft;
 use App\Draft\Exceptions\InvalidDraftSettingsException;
+use App\Franken\FrankenSettings;
+use App\Franken\SliceAssemblyMode;
 use App\Http\HttpRequest;
 use App\Testing\FakesCommands;
 use App\Testing\RequestHandlerTestCase;
@@ -282,5 +284,75 @@ class HandleGenerateDraftRequestTest extends RequestHandlerTestCase
 
         $this->assertResponseOk($response);
         $this->assertResponseJson($response);
+    }
+
+    #[Test]
+    public function itParsesFrankenPickCountsFromRequest(): void
+    {
+        $handler = new HandleGenerateDraftRequest(new HttpRequest([], [
+            'mode' => 'franken',
+            'picks_first_round' => '4',
+            'picks_per_round' => '1',
+        ], []));
+
+        $this->assertSame(4, $handler->frankenSettingValue('picksFirstRound'));
+        $this->assertSame(1, $handler->frankenSettingValue('picksPerRound'));
+    }
+
+    #[Test]
+    public function itDefaultsFrankenPickCountsWhenNotSet(): void
+    {
+        $handler = new HandleGenerateDraftRequest(new HttpRequest([], ['mode' => 'franken'], []));
+
+        $this->assertSame(FrankenSettings::DEFAULT_PICKS_FIRST_ROUND, $handler->frankenSettingValue('picksFirstRound'));
+        $this->assertSame(FrankenSettings::DEFAULT_PICKS_PER_ROUND, $handler->frankenSettingValue('picksPerRound'));
+    }
+
+    #[Test]
+    public function itParsesFrankenBagAndHandLimitsFromRequest(): void
+    {
+        $handler = new HandleGenerateDraftRequest(new HttpRequest([], [
+            'mode' => 'franken',
+            'limits' => [
+                'ABILITY' => ['bag' => '5', 'hand' => '2'],
+                // Left blank on purpose: an untouched field should not override the default.
+                'TECH' => ['bag' => '', 'hand' => '3'],
+                'NOT_A_CATEGORY' => ['bag' => '9', 'hand' => '9'],
+            ],
+        ], []));
+
+        $limits = $handler->frankenSettingValue('limits');
+
+        $this->assertSame(['bag' => 5, 'hand' => 2, 'final' => 2], $limits['ABILITY']);
+        $this->assertArrayNotHasKey('bag', $limits['TECH']);
+        $this->assertSame(3, $limits['TECH']['hand']);
+        $this->assertArrayNotHasKey('NOT_A_CATEGORY', $limits);
+    }
+
+    #[Test]
+    public function itDefaultsFrankenLimitsToEmptyWhenNotSet(): void
+    {
+        $handler = new HandleGenerateDraftRequest(new HttpRequest([], ['mode' => 'franken'], []));
+
+        $this->assertSame([], $handler->frankenSettingValue('limits'));
+    }
+
+    #[Test]
+    public function itParsesTheSliceAssemblyModeFromRequest(): void
+    {
+        $handler = new HandleGenerateDraftRequest(new HttpRequest([], [
+            'mode' => 'franken',
+            'slice_assembly_mode' => 'free',
+        ], []));
+
+        $this->assertSame(SliceAssemblyMode::FREE, $handler->frankenSettingValue('sliceAssemblyMode'));
+    }
+
+    #[Test]
+    public function itDefaultsTheSliceAssemblyModeToTileDraft(): void
+    {
+        $handler = new HandleGenerateDraftRequest(new HttpRequest([], ['mode' => 'franken'], []));
+
+        $this->assertSame(SliceAssemblyMode::DRAFT, $handler->frankenSettingValue('sliceAssemblyMode'));
     }
 }

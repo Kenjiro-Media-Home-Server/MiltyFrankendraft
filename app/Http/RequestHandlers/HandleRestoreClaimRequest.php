@@ -10,7 +10,7 @@ class HandleRestoreClaimRequest extends DraftRequestHandler
 {
     public function handle(): HttpResponse
     {
-        $draft = $this->loadDraftByUrlId('draft');
+        $draft = $this->loadPersistableDraftByUrlId('draft');
 
         // @todo this should be in some shared thing for all DraftRequestHandlers
         if ($draft == null) {
@@ -19,14 +19,14 @@ class HandleRestoreClaimRequest extends DraftRequestHandler
 
         $secret = $this->request->get('secret', '');
 
-        if ($draft->secrets->checkAdminSecret($secret)) {
+        if ($draft->secrets()->checkAdminSecret($secret)) {
             return $this->json([
                 'admin' => $secret,
                 'success' => true,
             ]);
         }
 
-        $playerId = $draft->secrets->playerIdBySecret($secret);
+        $playerId = $draft->secrets()->playerIdBySecret($secret);
 
         if ($playerId == null) {
             return $this->error('No player with that secret', 403);

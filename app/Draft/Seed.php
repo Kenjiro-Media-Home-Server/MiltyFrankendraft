@@ -14,6 +14,8 @@ class Seed
     private const OFFSET_SLICES = 0;
     private const OFFSET_FACTIONS = 1;
     private const OFFSET_PLAYER_ORDER = 2;
+    private const OFFSET_FRANKEN_POOLS = 3;
+    private const OFFSET_FRANKEN_SLICE_DRAFT = 4;
     private int $seed;
 
     public function __construct(?int $seed = null)
@@ -48,6 +50,21 @@ class Seed
     public function setForPlayerOrder(): void
     {
         mt_srand($this->seed + self::OFFSET_PLAYER_ORDER);
+    }
+
+    /**
+     * Franken shuffles one pool per category, so each gets its own offset to keep the pools
+     * independent of one another while staying reproducible from the seed.
+     */
+    public function setForFrankenPool(int $categoryIndex = 0): void
+    {
+        mt_srand($this->seed + self::OFFSET_FRANKEN_POOLS + $categoryIndex);
+    }
+
+    /** Each player's slice-tile draw order (SliceDraftOrder) is independent of everyone else's. */
+    public function setForFrankenSliceDraft(string $playerId): void
+    {
+        mt_srand($this->seed + self::OFFSET_FRANKEN_SLICE_DRAFT + crc32($playerId));
     }
 
     public function isValid()

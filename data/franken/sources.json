@@ -1,0 +1,317 @@
+[
+    {
+        "source": "absol",
+        "name": "Absol",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "action_deck_2",
+        "name": "Action Card Deck 2",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "addiction",
+        "name": "TI Addiction",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "balacasi",
+        "name": "Balacasi",
+        "canal": "community",
+        "components": 119,
+        "contributes": true
+    },
+    {
+        "source": "beans",
+        "name": "beans",
+        "canal": "community",
+        "components": 101,
+        "contributes": true
+    },
+    {
+        "source": "black_spectrum",
+        "name": "Black Spectrum",
+        "canal": "community",
+        "components": 2,
+        "contributes": true
+    },
+    {
+        "source": "blue_reverie",
+        "name": "Blue Reverie",
+        "canal": "community",
+        "components": 88,
+        "contributes": true
+    },
+    {
+        "source": "combosloth",
+        "name": "Combosloth",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "ds",
+        "name": "Discordant Stars",
+        "canal": "community",
+        "components": 537,
+        "contributes": true
+    },
+    {
+        "source": "endlesst",
+        "name": "endlesst",
+        "canal": "community",
+        "components": 181,
+        "contributes": true
+    },
+    {
+        "source": "eronous",
+        "name": "Ascendent Sun",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "erwans_gambit",
+        "name": "Erwan's Gambit",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "expanded_fracture",
+        "name": "Expanded Fracture",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "fowplus",
+        "name": "FoW+",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "franken",
+        "name": "Franken",
+        "canal": "community",
+        "components": 6,
+        "contributes": true
+    },
+    {
+        "source": "gamma",
+        "name": "Gamma Galaxies",
+        "canal": "community",
+        "components": 134,
+        "contributes": true
+    },
+    {
+        "source": "ignis_aurora",
+        "name": "ignis_aurora",
+        "canal": "community",
+        "components": 10,
+        "contributes": true
+    },
+    {
+        "source": "keleresplus",
+        "name": "keleresplus",
+        "canal": "community",
+        "components": 19,
+        "contributes": true
+    },
+    {
+        "source": "lost_star_charts_of_ixth",
+        "name": "Lost Star Charts of Ixth",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "luminous",
+        "name": "Luminous",
+        "canal": "community",
+        "components": 47,
+        "contributes": true
+    },
+    {
+        "source": "memephilosopher",
+        "name": "memephilosopher",
+        "canal": "community",
+        "components": 15,
+        "contributes": true
+    },
+    {
+        "source": "miltymod",
+        "name": "miltymod",
+        "canal": "community",
+        "components": 112,
+        "contributes": true
+    },
+    {
+        "source": "monuments",
+        "name": "Monuments+",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "muaat_mania",
+        "name": "Muaat Mania",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "newdawn",
+        "name": "New Dawn",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "nomadfalcon",
+        "name": "nomadfalcon",
+        "canal": "community",
+        "components": 44,
+        "contributes": true
+    },
+    {
+        "source": "other",
+        "name": "other",
+        "canal": "community",
+        "components": 29,
+        "contributes": true
+    },
+    {
+        "source": "pbd2000",
+        "name": "pbd2000",
+        "canal": "community",
+        "components": 49,
+        "contributes": true
+    },
+    {
+        "source": "project_pi",
+        "name": "project_pi",
+        "canal": "community",
+        "components": 191,
+        "contributes": true
+    },
+    {
+        "source": "promises_promises",
+        "name": "Promises, Promises",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "spice_thyme",
+        "name": "Spice & Thyme's Spicy (and Thymey) Content",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "theodisi",
+        "name": "Lost Legacies",
+        "canal": "community",
+        "components": 189,
+        "contributes": true
+    },
+    {
+        "source": "twilight_ds",
+        "name": "Twilight Discordant Stars",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "twilight_kart",
+        "name": "Twilight Kart: Destroyer Cup",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "uncharted_space",
+        "name": "Uncharted Space",
+        "canal": "community",
+        "components": 24,
+        "contributes": true
+    },
+    {
+        "source": "untangled_space",
+        "name": "Untangled Space",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "viability_patch",
+        "name": "Viability Patch",
+        "canal": "community",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "base",
+        "name": "Twilight Imperium 4th Edition (Base Game)",
+        "canal": "official",
+        "components": 205,
+        "contributes": true
+    },
+    {
+        "source": "codex1",
+        "name": "Twilight Codex\nVolume I: Ordinian",
+        "canal": "official",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "codex2",
+        "name": "Twilight Codex\nVolume II: Affinity",
+        "canal": "official",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "codex3",
+        "name": "Twilight Codex\nVolume III: Vigil",
+        "canal": "official",
+        "components": 12,
+        "contributes": true
+    },
+    {
+        "source": "codex4",
+        "name": "Twilight Codex\nVolume IV: Liberation",
+        "canal": "official",
+        "components": 0,
+        "contributes": false
+    },
+    {
+        "source": "pok",
+        "name": "Prophecy of Kings [Expansion]",
+        "canal": "official",
+        "components": 202,
+        "contributes": true
+    },
+    {
+        "source": "thunders_edge",
+        "name": "Thunders Edge [Expansion]",
+        "canal": "official",
+        "components": 123,
+        "contributes": true
+    },
+    {
+        "source": "twilights_fall",
+        "name": "Twilight's Fall [Part of TE Expansion]",
+        "canal": "official",
+        "components": 16,
+        "contributes": true
+    }
+]

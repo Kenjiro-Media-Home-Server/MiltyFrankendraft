@@ -1,5 +1,11 @@
 let advanced_open = false;
+let franken_advanced_open = false;
 let alliance_mode = false;
+
+// 'milty' or 'franken'. Mirrored into the hidden #mode input that is posted with the form.
+let draft_mode = 'milty';
+// Alliance mode is Milty-only, so it is switched off while Franken is selected and put back after.
+let alliance_mode_before_franken = false;
 
 const EDITIONS = {
     BASEGAME: {
@@ -44,6 +50,42 @@ $(document).ready(function () {
         }
     });
 
+    $('.mode-option').on('click', function (e) {
+        e.preventDefault();
+        set_draft_mode($(this).data('mode'));
+    });
+
+    $('#franken-more').on('click', function (e) {
+        e.preventDefault();
+        franken_advanced_open = !franken_advanced_open
+        $('#franken-advanced').slideToggle();
+        if (franken_advanced_open) {
+            $(this).html('hide');
+        } else {
+            $(this).html('show');
+        }
+    });
+
+    $('.select-sources').on('click', function (e) {
+        e.preventDefault();
+        toggle_sources($(this).data('canal'), true);
+    });
+    $('.deselect-sources').on('click', function (e) {
+        e.preventDefault();
+        toggle_sources($(this).data('canal'), false);
+    });
+
+    $('#franken-limits-table').on('input', '.franken-limit-input', update_franken_limit_totals);
+    update_franken_limit_totals();
+
+    $('#franken-limits-reset').on('click', function (e) {
+        e.preventDefault();
+        $('.franken-limit-input, #picks_first_round, #picks_per_round').each(function () {
+            $(this).val($(this).prop('defaultValue'));
+        });
+        update_franken_limit_totals();
+    });
+
 
     if (window.location.hash != '' && $('.tab' + window.location.hash).length != 0) {
         $('#tabs nav a[href="' + window.location.hash + '"]').click();
@@ -67,12 +109,16 @@ $(document).ready(function () {
 
     $('#generate-form').on('submit', function (e) {
         e.preventDefault();
-        $('#error').hide();
+        clear_errors();
+
+        if (! validate_form()) {
+            return;
+        }
 
         loading();
 
         let formData = new FormData();
-        let values = $('form').serializeArray();
+        let values = active_form_values();
         for (let i = 0; i < values.length; i++) {
             formData.append(values[i].name, values[i].value);
         }
@@ -113,6 +159,7 @@ $(document).ready(function () {
 
     update_alliance_mode();
     init_player_count();
+    set_draft_mode($('#mode').val() || 'milty');
 });
 
 function toggleExpansion($checkbox) {
@@ -233,6 +280,102 @@ function update_alliance_teams() {
     $(".players_inputs").toggleClass("alliance_preset_teams", $('input[name="alliance_teams"]:checked').val() == "preset");
 }
 
+
+/**
+ * Switch the form between the Milty and the Franken settings.
+ *
+ * Only the fields of the visible mode section are posted (see active_form_values), so the hidden
+ * mode never contributes settings, and the shared fields at the top of the form are posted in both.
+ */
+function set_draft_mode(mode) {
+    draft_mode = mode === 'franken' ? 'franken' : 'milty';
+
+    $('#mode').val(draft_mode);
+
+    $('.mode-option')
+        .removeClass('active')
+        .attr('aria-pressed', 'false');
+    $('.mode-option[data-mode="' + draft_mode + '"]')
+        .addClass('active')
+        .attr('aria-pressed', 'true');
+
+    $('.mode-section').each(function () {
+        $(this).toggleClass('inactive', $(this).data('mode') !== draft_mode);
+    });
+
+    $('body')
+        .toggleClass('mode-milty', draft_mode === 'milty')
+        .toggleClass('mode-franken', draft_mode === 'franken');
+
+    // Alliance mode is a Milty-only variant (spec 2.1), so Franken never shows or posts it.
+    if (draft_mode === 'franken') {
+        if (alliance_mode) {
+            alliance_mode_before_franken = true;
+            $('#alliance_toggle').prop('checked', false);
+            update_alliance_mode();
+        }
+    } else if (alliance_mode_before_franken) {
+        alliance_mode_before_franken = false;
+        $('#alliance_toggle').prop('checked', true);
+        update_alliance_mode();
+    }
+
+    clear_errors();
+}
+
+function toggle_sources(canal, checked) {
+    $('.franken-source[data-canal="' + canal + '"]').prop('checked', checked);
+}
+
+/** Keeps the "Total" row of the Franken bag/hand table in sync with what has been typed in. */
+function update_franken_limit_totals() {
+    let totals = { bag: 0, hand: 0 };
+
+    $('.franken-limit-input').each(function () {
+        let column = $(this).data('column');
+        let value = parseInt($(this).val(), 10);
+
+        totals[column] += isNaN(value) ? 0 : value;
+    });
+
+    $('#franken-bag-total').text(totals.bag);
+    $('#franken-hand-total').text(totals.hand);
+}
+
+/**
+ * The fields that belong to the draft we are about to generate: everything outside a mode
+ * section (the shared settings) plus the fields of the currently selected mode.
+ */
+function active_form_values() {
+    return $('#generate-form')
+        .find('input, select, textarea')
+        .filter(function () {
+            const section = $(this).closest('.mode-section');
+
+            return section.length === 0 || section.data('mode') === draft_mode;
+        })
+        .serializeArray();
+}
+
+function validate_form() {
+    if (draft_mode === 'franken' && $('.franken-source:checked').length === 0) {
+        $('#franken_no_sources_error').show();
+        show_error('Pick at least one content source for the Franken draft.');
+
+        return false;
+    }
+
+    return true;
+}
+
+function show_error(message) {
+    $('#error').show().html(message);
+}
+
+function clear_errors() {
+    $('#error').hide();
+    $('#franken_no_sources_error').hide();
+}
 
 function loading(loading = true) {
     if (loading) {

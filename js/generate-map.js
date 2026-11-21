@@ -446,15 +446,24 @@ function lookup(player_index, tile_index) {
             if(tile_index == "H") {
 
                 let tile = "0";
+                let image = null;
 
                 if(p.faction != null) {
-                    let h = $('[data-faction="' + p.faction + '"]').data('homesystem');
+                    let el = $('[data-faction="' + p.faction + '"]');
+                    let h = el.data('homesystem');
                     if(typeof(h) != 'undefined') {
                         tile = h;
                     }
+                    // Community-source home systems (Discordant Stars and later) are filed under
+                    // their faction name rather than a tile number, so their real image filename
+                    // has to travel with the tile id instead of being guessed from it.
+                    let img = el.data('homesystem-image');
+                    if(typeof(img) != 'undefined' && img !== '') {
+                        image = img;
+                    }
                 }
 
-                return [tile, p.name];
+                return [tile, p.name, image];
             }
             else if(p.slice != null) {
                 // huzzah!
@@ -473,6 +482,7 @@ function draw_tile(tile) {
     let chunks = tile[2].split('-');
     let label = chunks[0] + "-" + chunks[1];
     let is_hyperlane = false;
+    let home_image = null;
 
     if(chunks.length == 3 && chunks[0] == "L") {
         // hyperlane
@@ -496,15 +506,23 @@ function draw_tile(tile) {
             if(chunks[1] == "H") {
                 if(tilename == "EMPTY") tilename = "0";
                 label = result[1];
+                home_image = result[2] || null;
             }
         }
     }
 
     if(tilename != 'EMPTY' && tilename != 0 && !all_tiles.includes(tilename)) all_tiles.push(tilename);
 
-    let tile_image =  tilename + '.png';
-    if(tile_image.substring(0, 2) != 'DS') tile_image = 'ST_' + tile_image;
-    tile_image = window.routes.tile_images + '/' + tile_image;
+    let tile_image;
+    if(home_image) {
+        // The Franken draft supplies the real filename for home systems whose art is not filed
+        // under a plain tile number (community-source factions), so it is used as-is here.
+        tile_image = window.routes.tile_images + '/' + home_image;
+    } else {
+        tile_image = tilename + '.png';
+        if(tile_image.substring(0, 2) != 'DS') tile_image = 'ST_' + tile_image;
+        tile_image = window.routes.tile_images + '/' + tile_image;
+    }
 
     let html = '<div data-q="' + tile[0] +'" data-r="' + tile[1] + '" class="tile ' + (is_hyperlane ? 'hyperlane' : 'regular') + '">' +
         '<img src="' + tile_image + '" data-rotate="' + rotation + '"  />' +

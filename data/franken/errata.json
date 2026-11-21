@@ -1,0 +1,2650 @@
+[
+    {
+        "id": "ABILITY:a_new_edifice",
+        "category": "ABILITY",
+        "item_id": "a_new_edifice",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:abyssal_embrace",
+        "category": "ABILITY",
+        "item_id": "abyssal_embrace",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:allure_of_darkness",
+        "category": "ABILITY",
+        "item_id": "allure_of_darkness",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:amalgamation",
+        "category": "ABILITY",
+        "item_id": "amalgamation",
+        "optional_swaps": [
+            "HERO:cabalhero"
+        ],
+        "additional_components": [
+            "ABILITY:devour"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:ancient_blueprints",
+        "category": "ABILITY",
+        "item_id": "ancient_blueprints",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:ancient_empire",
+        "category": "ABILITY",
+        "item_id": "ancient_empire",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:arms_dealers",
+        "category": "ABILITY",
+        "item_id": "arms_dealers",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:autonetic_memory",
+        "category": "ABILITY",
+        "item_id": "autonetic_memory",
+        "additional_components": [
+            "ABILITY:cybernetic_madness"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:awaken",
+        "category": "ABILITY",
+        "item_id": "awaken",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:binding_debts",
+        "category": "ABILITY",
+        "item_id": "binding_debts",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:biophobic",
+        "category": "ABILITY",
+        "item_id": "biophobic",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:black_ops",
+        "category": "ABILITY",
+        "item_id": "black_ops",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:bladesorchestra",
+        "category": "ABILITY",
+        "item_id": "bladesorchestra",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:borrowed_authority",
+        "category": "ABILITY",
+        "item_id": "borrowed_authority",
+        "additional_components": [
+            "ABILITY:seize_command"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:byssus",
+        "category": "ABILITY",
+        "item_id": "byssus",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:call_of_the_haunted",
+        "category": "ABILITY",
+        "item_id": "call_of_the_haunted",
+        "additional_components": [
+            "PN:thpnrevenant"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:celestial_guides",
+        "category": "ABILITY",
+        "item_id": "celestial_guides",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:celestial_reclamation",
+        "category": "ABILITY",
+        "item_id": "celestial_reclamation",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:classified_developments",
+        "category": "ABILITY",
+        "item_id": "classified_developments",
+        "optional_swaps": [
+            "COMMANDER:belkoseacommander",
+            "BREAKTHROUGH:belkoseabt"
+        ],
+        "additional_components": [
+            "ABILITY:superweapon_projects"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:cloaked_fleets",
+        "category": "ABILITY",
+        "item_id": "cloaked_fleets",
+        "additional_components": [
+            "ABILITY:shroud_of_lith"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:coalescence",
+        "category": "ABILITY",
+        "item_id": "coalescence",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:collateralized_loans",
+        "category": "ABILITY",
+        "item_id": "collateralized_loans",
+        "additional_components": [
+            "ABILITY:fine_print"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:contagion",
+        "category": "ABILITY",
+        "item_id": "contagion",
+        "additional_components": [
+            "ABILITY:plague_reservoir",
+            "ABILITY:subversive"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:corporate_entity",
+        "category": "ABILITY",
+        "item_id": "corporate_entity",
+        "optional_swaps": [
+            "HERO:veldyrhero",
+            "COMMANDER:veldyrcommander"
+        ],
+        "additional_components": [
+            "PN:dspnveld1",
+            "PN:dspnveld2",
+            "PN:dspnveld3",
+            "PN:dspnveld4",
+            "ABILITY:holding_company"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:crafty",
+        "category": "ABILITY",
+        "item_id": "crafty",
+        "optional_swaps": [
+            "BREAKTHROUGH:yssarilbt"
+        ],
+        "additional_components": [
+            "ABILITY:scheming"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:creuss_gate",
+        "category": "ABILITY",
+        "item_id": "creuss_gate",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:cunning",
+        "category": "ABILITY",
+        "item_id": "cunning",
+        "optional_swaps": [
+            "BREAKTHROUGH:lizhobt",
+            "COMMANDER:lizhocommander",
+            "HERO:lizhohero",
+            "MECH:lizho_mech"
+        ],
+        "additional_components": [
+            "ABILITY:subterfuge"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:cybernetic_madness",
+        "category": "ABILITY",
+        "item_id": "cybernetic_madness",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:dark_whispers",
+        "category": "ABILITY",
+        "item_id": "dark_whispers",
+        "optional_swaps": [
+            "PN:blood_pact"
+        ],
+        "additional_components": [
+            "PN:dark_pact"
+        ],
+        "alternate_text": "[Franken only] During setup, take the Dark Pact promissory note as an additional component, and you may choose Blood Pact as an optional component in place of your drafted promissory notes; you have 2 faction promissory notes.",
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:data_recovery",
+        "category": "ABILITY",
+        "item_id": "data_recovery",
+        "additional_components": [
+            "ABILITY:black_ops"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:decree",
+        "category": "ABILITY",
+        "item_id": "decree",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:desperados",
+        "category": "ABILITY",
+        "item_id": "desperados",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:devour",
+        "category": "ABILITY",
+        "item_id": "devour",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:diplomats",
+        "category": "ABILITY",
+        "item_id": "diplomats",
+        "additional_components": [
+            "ABILITY:free_people"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:divination",
+        "category": "ABILITY",
+        "item_id": "divination",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:edict",
+        "category": "ABILITY",
+        "item_id": "edict",
+        "undraftable": true,
+        "alternate_text": "When you win a combat, place 1 command token from your opponent's reinforcements in your fleet pool if it does not already contain 1 of that player's tokens; other players' tokens in your fleet pool increase your fleet limit but cannot be redistributed.",
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:edict_y",
+        "category": "ABILITY",
+        "item_id": "edict_y",
+        "always_add_to_pool": true,
+        "additional_components": [
+            "ABILITY:primacy"
+        ],
+        "source": "franken"
+    },
+    {
+        "id": "ABILITY:expeditionary_cache",
+        "category": "ABILITY",
+        "item_id": "expeditionary_cache",
+        "additional_components": [
+            "ABILITY:shared_discoveries"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:factory_lease",
+        "category": "ABILITY",
+        "item_id": "factory_lease",
+        "additional_components": [
+            "PN:thpnmyrrh",
+            "PN:thpnmyrri",
+            "PN:thpnmyrrc"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:fine_print",
+        "category": "ABILITY",
+        "item_id": "fine_print",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:flotilla",
+        "category": "ABILITY",
+        "item_id": "flotilla",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:forbidden_knowledge",
+        "category": "ABILITY",
+        "item_id": "forbidden_knowledge",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:fragile",
+        "category": "ABILITY",
+        "item_id": "fragile",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:free_people",
+        "category": "ABILITY",
+        "item_id": "free_people",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:full_moon_phase",
+        "category": "ABILITY",
+        "item_id": "full_moon_phase",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:galactic_threat",
+        "category": "ABILITY",
+        "item_id": "galactic_threat",
+        "optional_swaps": [
+            "TECH:vay"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:galvanize",
+        "category": "ABILITY",
+        "item_id": "galvanize",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:gashlai_physiology",
+        "category": "ABILITY",
+        "item_id": "gashlai_physiology",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:glory",
+        "category": "ABILITY",
+        "item_id": "glory",
+        "optional_swaps": [
+            "ABILITY:heroism",
+            "FLAGSHIP:kjalengard_flagship",
+            "TECH:dskjalg",
+            "AGENT:kjalengardagent",
+            "COMMANDER:kjalengardcommander",
+            "HERO:kjalengardhero",
+            "MECH:kjalengard_mech",
+            "BREAKTHROUGH:kjalengardbt"
+        ],
+        "additional_components": [
+            "ABILITY:valor"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:heroism",
+        "category": "ABILITY",
+        "item_id": "heroism",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:hired_guns",
+        "category": "ABILITY",
+        "item_id": "hired_guns",
+        "optional_swaps": [
+            "COMMANDER:nokarcommander",
+            "BREAKTHROUGH:nokarbt"
+        ],
+        "additional_components": [
+            "ABILITY:desperados"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:holding_company",
+        "category": "ABILITY",
+        "item_id": "holding_company",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:honor_bound",
+        "category": "ABILITY",
+        "item_id": "honor_bound",
+        "optional_swaps": [
+            "COMMANDER:toldarcommander",
+            "MECH:toldar_mech",
+            "BREAKTHROUGH:toldarbt"
+        ],
+        "additional_components": [
+            "ABILITY:pride",
+            "ABILITY:the_code"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:hubris",
+        "category": "ABILITY",
+        "item_id": "hubris",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:imperia",
+        "category": "ABILITY",
+        "item_id": "imperia",
+        "undraftable": true,
+        "alternate_text": "[Franken only] When you win a combat, place 1 command token from your opponent's reinforcements in your fleet pool if it does not already contain 1 of that player's tokens; other players' tokens in your fleet pool do not increase your fleet limit and cannot be redistributed. While another player's command token is on your command sheet, you can use the ability of that player's commander, if it is unlocked.",
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:imperia_y",
+        "category": "ABILITY",
+        "item_id": "imperia_y",
+        "always_add_to_pool": true,
+        "additional_components": [
+            "ABILITY:primacy"
+        ],
+        "source": "franken"
+    },
+    {
+        "id": "ABILITY:incursion",
+        "category": "ABILITY",
+        "item_id": "incursion",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:indoctrination",
+        "category": "ABILITY",
+        "item_id": "indoctrination",
+        "optional_swaps": [
+            "MECH:yin_mech"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:limited_vision",
+        "category": "ABILITY",
+        "item_id": "limited_vision",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:lithoids",
+        "category": "ABILITY",
+        "item_id": "lithoids",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:living_metals",
+        "category": "ABILITY",
+        "item_id": "living_metals",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:lunar_eclipse_phase",
+        "category": "ABILITY",
+        "item_id": "lunar_eclipse_phase",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:mantle_cracking",
+        "category": "ABILITY",
+        "item_id": "mantle_cracking",
+        "optional_swaps": [
+            "BREAKTHROUGH:gledgebt"
+        ],
+        "additional_components": [
+            "ABILITY:celestial_reclamation"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:marionettes",
+        "category": "ABILITY",
+        "item_id": "marionettes",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:mark_of_pharadn",
+        "category": "ABILITY",
+        "item_id": "mark_of_pharadn",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:meteor_slings",
+        "category": "ABILITY",
+        "item_id": "meteor_slings",
+        "optional_swaps": [
+            "BREAKTHROUGH:khraskbt"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:military_industrial_complex",
+        "category": "ABILITY",
+        "item_id": "military_industrial_complex",
+        "optional_swaps": [
+            "COMMANDER:axiscommander",
+            "HERO:axishero"
+        ],
+        "additional_components": [
+            "ABILITY:arms_dealers"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:miniaturization",
+        "category": "ABILITY",
+        "item_id": "miniaturization",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:mitosis",
+        "category": "ABILITY",
+        "item_id": "mitosis",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:mobile_command",
+        "category": "ABILITY",
+        "item_id": "mobile_command",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:narrow_way",
+        "category": "ABILITY",
+        "item_id": "narrow_way",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:new_moon_phase",
+        "category": "ABILITY",
+        "item_id": "new_moon_phase",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:nocturne",
+        "category": "ABILITY",
+        "item_id": "nocturne",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:oceanbound",
+        "category": "ABILITY",
+        "item_id": "oceanbound",
+        "optional_swaps": [
+            "TECH:hydrothermal",
+            "FLAGSHIP:deepwrought_flagship",
+            "AGENT:deepwroughtagent",
+            "COMMANDER:deepwroughtcommander"
+        ],
+        "additional_components": [
+            "ABILITY:researchteam"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:oracle_ai",
+        "category": "ABILITY",
+        "item_id": "oracle_ai",
+        "optional_swaps": [
+            "PN:dspnauge",
+            "HERO:augershero"
+        ],
+        "additional_components": [
+            "ABILITY:limited_vision",
+            "ABILITY:probability_algorithms"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:orbital_drop",
+        "category": "ABILITY",
+        "item_id": "orbital_drop",
+        "optional_swaps": [
+            "MECH:sol_mech"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:orbital_foundries",
+        "category": "ABILITY",
+        "item_id": "orbital_foundries",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:paranoia",
+        "category": "ABILITY",
+        "item_id": "paranoia",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:phoenixstandard",
+        "category": "ABILITY",
+        "item_id": "phoenixstandard",
+        "optional_swaps": [
+            "MECH:bastion_mech",
+            "AGENT:bastionagent",
+            "COMMANDER:bastioncommander",
+            "HERO:bastionhero",
+            "TECH:proxima"
+        ],
+        "additional_components": [
+            "ABILITY:galvanize"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:pillage",
+        "category": "ABILITY",
+        "item_id": "pillage",
+        "optional_swaps": [
+            "AGENT:mentakagent",
+            "PN:pop"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:plague_reservoir",
+        "category": "ABILITY",
+        "item_id": "plague_reservoir",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:plotsplots",
+        "category": "ABILITY",
+        "item_id": "plotsplots",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:policies",
+        "category": "ABILITY",
+        "item_id": "policies",
+        "optional_swaps": [
+            "BREAKTHROUGH:olradinbt",
+            "HERO:olradinhero",
+            "MECH:olradin_mech"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:prescience",
+        "category": "ABILITY",
+        "item_id": "prescience",
+        "optional_swaps": [
+            "HOMESYSTEM:uydai"
+        ],
+        "additional_components": [
+            "ABILITY:the_starlit_path",
+            "ABILITY:narrow_way"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:prescient_memories",
+        "category": "ABILITY",
+        "item_id": "prescient_memories",
+        "optional_swaps": [
+            "AGENT:mykomentoriagent"
+        ],
+        "additional_components": [
+            "ABILITY:divination"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:pride",
+        "category": "ABILITY",
+        "item_id": "pride",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:primacy",
+        "category": "ABILITY",
+        "item_id": "primacy",
+        "undraftable": true,
+        "source": "franken"
+    },
+    {
+        "id": "ABILITY:primordial_secrets",
+        "category": "ABILITY",
+        "item_id": "primordial_secrets",
+        "additional_components": [
+            "ABILITY:forbidden_knowledge"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:privileged_citizenry",
+        "category": "ABILITY",
+        "item_id": "privileged_citizenry",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:probability_algorithms",
+        "category": "ABILITY",
+        "item_id": "probability_algorithms",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:propagation",
+        "category": "ABILITY",
+        "item_id": "propagation",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:puppetsoftheblade",
+        "category": "ABILITY",
+        "item_id": "puppetsoftheblade",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:quantum_entanglement",
+        "category": "ABILITY",
+        "item_id": "quantum_entanglement",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:radiance",
+        "category": "ABILITY",
+        "item_id": "radiance",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:rally_to_the_cause",
+        "category": "ABILITY",
+        "item_id": "rally_to_the_cause",
+        "optional_swaps": [
+            "MECH:freesystems_mech"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:recycled_materials",
+        "category": "ABILITY",
+        "item_id": "recycled_materials",
+        "optional_swaps": [
+            "MECH:rohdhna_mech"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:researchteam",
+        "category": "ABILITY",
+        "item_id": "researchteam",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:riftmeld",
+        "category": "ABILITY",
+        "item_id": "riftmeld",
+        "optional_swaps": [
+            "TECH:vtx",
+            "AGENT:cabalagent"
+        ],
+        "additional_components": [
+            "ABILITY:devour"
+        ],
+        "alternate_text": "[Franken only] When you research a unit upgrade technology, you may return 1 captured unit of that type to ignore all of the technology's prerequisites. If you do not have the Amalgamation ability, you may only have one captured unit of each non-fighter ship type in your play area.",
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:scheming",
+        "category": "ABILITY",
+        "item_id": "scheming",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:seize_command",
+        "category": "ABILITY",
+        "item_id": "seize_command",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:shared_discoveries",
+        "category": "ABILITY",
+        "item_id": "shared_discoveries",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:shroud_of_lith",
+        "category": "ABILITY",
+        "item_id": "shroud_of_lith",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:singularity_point",
+        "category": "ABILITY",
+        "item_id": "singularity_point",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:sorrow",
+        "category": "ABILITY",
+        "item_id": "sorrow",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "ABILITY:stall_tactics",
+        "category": "ABILITY",
+        "item_id": "stall_tactics",
+        "optional_swaps": [
+            "MECH:yssaril_mech"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:star_forge",
+        "category": "ABILITY",
+        "item_id": "star_forge",
+        "optional_swaps": [
+            "MECH:muaat_mech",
+            "BREAKTHROUGH:muaatbt"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:stealth_insertion",
+        "category": "ABILITY",
+        "item_id": "stealth_insertion",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:subterfuge",
+        "category": "ABILITY",
+        "item_id": "subterfuge",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:subversive",
+        "category": "ABILITY",
+        "item_id": "subversive",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:superweapon_projects",
+        "category": "ABILITY",
+        "item_id": "superweapon_projects",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:synthesis",
+        "category": "ABILITY",
+        "item_id": "synthesis",
+        "additional_components": [
+            "ABILITY:living_metals"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:targeted_acquisition",
+        "category": "ABILITY",
+        "item_id": "targeted_acquisition",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:technological_singularity",
+        "category": "ABILITY",
+        "item_id": "technological_singularity",
+        "optional_swaps": [
+            "TECH:vax",
+            "BREAKTHROUGH:nekrobt"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:telepathic",
+        "category": "ABILITY",
+        "item_id": "telepathic",
+        "optional_swaps": [
+            "PN:gift"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:terragenesis",
+        "category": "ABILITY",
+        "item_id": "terragenesis",
+        "optional_swaps": [
+            "BREAKTHROUGH:titansbt"
+        ],
+        "additional_components": [
+            "ABILITY:awaken",
+            "ABILITY:coalescence"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:testing_yard",
+        "category": "ABILITY",
+        "item_id": "testing_yard",
+        "optional_swaps": [
+            "STARTINGFLEET:kryxos"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:the_code",
+        "category": "ABILITY",
+        "item_id": "the_code",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:the_company",
+        "category": "ABILITY",
+        "item_id": "the_company",
+        "optional_swaps": [
+            "AGENT:nomadagentmercer",
+            "BREAKTHROUGH:nomadbt"
+        ],
+        "additional_components": [
+            "AGENT:nomadagentartuno",
+            "AGENT:nomadagentthundarian"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "ABILITY:the_lady_and_the_lord",
+        "category": "ABILITY",
+        "item_id": "the_lady_and_the_lord",
+        "optional_swaps": [
+            "COMMANDER:gheminacommander",
+            "HERO:gheminaherolady",
+            "HERO:gheminaherolord"
+        ],
+        "alternate_text": "[Franken only] During setup, place the Lady flagship token in your reinforcements with your chosen drafted Flagship and place both drafted Heroes next to your faction sheet. The Lady flagship token is a second flagship unit with the abilities and attributes listed on the Lady flagship card. You have 2 Heroes.",
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:the_starlit_path",
+        "category": "ABILITY",
+        "item_id": "the_starlit_path",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:the_tribuni",
+        "category": "ABILITY",
+        "item_id": "the_tribuni",
+        "undraftable": true,
+        "source": "codex3"
+    },
+    {
+        "id": "ABILITY:thrones_of_ruin",
+        "category": "ABILITY",
+        "item_id": "thrones_of_ruin",
+        "additional_components": [
+            "ABILITY:traces_of_ruin"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:traces_of_ruin",
+        "category": "ABILITY",
+        "item_id": "traces_of_ruin",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:valor",
+        "category": "ABILITY",
+        "item_id": "valor",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "ABILITY:waning_moon_phase",
+        "category": "ABILITY",
+        "item_id": "waning_moon_phase",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:waxing_moon_phase",
+        "category": "ABILITY",
+        "item_id": "waxing_moon_phase",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "ABILITY:zeal",
+        "category": "ABILITY",
+        "item_id": "zeal",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "AGENT:atokeraagent",
+        "category": "AGENT",
+        "item_id": "atokeraagent",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "AGENT:bastionagent",
+        "category": "AGENT",
+        "item_id": "bastionagent",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "AGENT:bentoragent",
+        "category": "AGENT",
+        "item_id": "bentoragent",
+        "optional_swaps": [
+            "COMMANDER:bentorcommander"
+        ],
+        "additional_components": [
+            "ABILITY:ancient_blueprints"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "AGENT:cabalagent",
+        "category": "AGENT",
+        "item_id": "cabalagent",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "AGENT:cheiranagent",
+        "category": "AGENT",
+        "item_id": "cheiranagent",
+        "additional_components": [
+            "ABILITY:byssus"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "AGENT:deepwroughtagent",
+        "category": "AGENT",
+        "item_id": "deepwroughtagent",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "AGENT:firmamentagent",
+        "category": "AGENT",
+        "item_id": "firmamentagent",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "AGENT:kjalengardagent",
+        "category": "AGENT",
+        "item_id": "kjalengardagent",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "AGENT:mentakagent",
+        "category": "AGENT",
+        "item_id": "mentakagent",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "AGENT:muaatagent",
+        "category": "AGENT",
+        "item_id": "muaatagent",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "AGENT:mykomentoriagent",
+        "category": "AGENT",
+        "item_id": "mykomentoriagent",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "AGENT:nomadagentartuno",
+        "category": "AGENT",
+        "item_id": "nomadagentartuno",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "AGENT:nomadagentmercer",
+        "category": "AGENT",
+        "item_id": "nomadagentmercer",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "AGENT:nomadagentthundarian",
+        "category": "AGENT",
+        "item_id": "nomadagentthundarian",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "AGENT:obsidianagent",
+        "category": "AGENT",
+        "item_id": "obsidianagent",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:belkoseabt",
+        "category": "BREAKTHROUGH",
+        "item_id": "belkoseabt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:crimsonbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "crimsonbt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:firmamentbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "firmamentbt",
+        "optional_swaps": [
+            "FLAGSHIP:firmament_flagship"
+        ],
+        "additional_components": [
+            "PLOT:assail",
+            "PLOT:enervate",
+            "PLOT:siphon",
+            "PLOT:mutated_seethe",
+            "PLOT:mutated_extract",
+            "ABILITY:puppetsoftheblade",
+            "ABILITY:plotsplots"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:gledgebt",
+        "category": "BREAKTHROUGH",
+        "item_id": "gledgebt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:khraskbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "khraskbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:kjalengardbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "kjalengardbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:lizhobt",
+        "category": "BREAKTHROUGH",
+        "item_id": "lizhobt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:muaatbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "muaatbt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:mykomentoribt",
+        "category": "BREAKTHROUGH",
+        "item_id": "mykomentoribt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:naalubt",
+        "category": "BREAKTHROUGH",
+        "item_id": "naalubt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:nekrobt",
+        "category": "BREAKTHROUGH",
+        "item_id": "nekrobt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:nivynbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "nivynbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:nokarbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "nokarbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:nomadbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "nomadbt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:obsidianbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "obsidianbt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:olradinbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "olradinbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:pharadnbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "pharadnbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:rohdhnabt",
+        "category": "BREAKTHROUGH",
+        "item_id": "rohdhnabt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:sardakkbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "sardakkbt",
+        "additional_components": [
+            "STARTINGTECH:sardakk"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:titansbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "titansbt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "BREAKTHROUGH:toldarbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "toldarbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:vadenbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "vadenbt",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "BREAKTHROUGH:yssarilbt",
+        "category": "BREAKTHROUGH",
+        "item_id": "yssarilbt",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "COMMANDER:atokeracommander",
+        "category": "COMMANDER",
+        "item_id": "atokeracommander",
+        "optional_swaps": [
+            "AGENT:atokeraagent"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:axiscommander",
+        "category": "COMMANDER",
+        "item_id": "axiscommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:bastioncommander",
+        "category": "COMMANDER",
+        "item_id": "bastioncommander",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "COMMANDER:belkoseacommander",
+        "category": "COMMANDER",
+        "item_id": "belkoseacommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:bentorcommander",
+        "category": "COMMANDER",
+        "item_id": "bentorcommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:cabalcommander",
+        "category": "COMMANDER",
+        "item_id": "cabalcommander",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "COMMANDER:crimsoncommander",
+        "category": "COMMANDER",
+        "item_id": "crimsoncommander",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "COMMANDER:deepwroughtcommander",
+        "category": "COMMANDER",
+        "item_id": "deepwroughtcommander",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "COMMANDER:firmamentcommander",
+        "category": "COMMANDER",
+        "item_id": "firmamentcommander",
+        "optional_swaps": [
+            "AGENT:firmamentagent"
+        ],
+        "additional_components": [
+            "PLOT:mutated_enervate",
+            "ABILITY:puppetsoftheblade",
+            "ABILITY:plotsplots"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "COMMANDER:gheminacommander",
+        "category": "COMMANDER",
+        "item_id": "gheminacommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:ghostcommander",
+        "category": "COMMANDER",
+        "item_id": "ghostcommander",
+        "additional_components": [
+            "ABILITY:quantum_entanglement"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "COMMANDER:kjalengardcommander",
+        "category": "COMMANDER",
+        "item_id": "kjalengardcommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:lizhocommander",
+        "category": "COMMANDER",
+        "item_id": "lizhocommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:mahactcommander",
+        "category": "COMMANDER",
+        "item_id": "mahactcommander",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "COMMANDER:mahactcommander_y",
+        "category": "COMMANDER",
+        "item_id": "mahactcommander_y",
+        "always_add_to_pool": true,
+        "additional_components": [
+            "ABILITY:primacy"
+        ],
+        "source": "franken"
+    },
+    {
+        "id": "COMMANDER:nokarcommander",
+        "category": "COMMANDER",
+        "item_id": "nokarcommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:obsidiancommander",
+        "category": "COMMANDER",
+        "item_id": "obsidiancommander",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "COMMANDER:pharadncommander",
+        "category": "COMMANDER",
+        "item_id": "pharadncommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:revenantcommander",
+        "category": "COMMANDER",
+        "item_id": "revenantcommander",
+        "additional_components": [
+            "ABILITY:allure_of_darkness"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "COMMANDER:toldarcommander",
+        "category": "COMMANDER",
+        "item_id": "toldarcommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:vadencommander",
+        "category": "COMMANDER",
+        "item_id": "vadencommander",
+        "additional_components": [
+            "ABILITY:fine_print"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "COMMANDER:veldyrcommander",
+        "category": "COMMANDER",
+        "item_id": "veldyrcommander",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMODITIES:bastion",
+        "category": "COMMODITIES",
+        "item_id": "bastion",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "COMMODITIES:mykomentori",
+        "category": "COMMODITIES",
+        "item_id": "mykomentori",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "COMMODITIES:obsidian",
+        "category": "COMMODITIES",
+        "item_id": "obsidian",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "FLAGSHIP:atokera_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "atokera_flagship",
+        "optional_swaps": [
+            "TECH:dsatoky"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "FLAGSHIP:bentor_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "bentor_flagship",
+        "additional_components": [
+            "ABILITY:ancient_blueprints"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "FLAGSHIP:crimson_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "crimson_flagship",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "FLAGSHIP:deepwrought_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "deepwrought_flagship",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "FLAGSHIP:firmament_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "firmament_flagship",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "FLAGSHIP:ghost_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "ghost_flagship",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "FLAGSHIP:ghoti_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "ghoti_flagship",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "FLAGSHIP:kjalengard_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "kjalengard_flagship",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "FLAGSHIP:kollecc_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "kollecc_flagship",
+        "additional_components": [
+            "ABILITY:shroud_of_lith"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "FLAGSHIP:kryxos_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "kryxos_flagship",
+        "additional_components": [
+            "TECH:thkryxosfs"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "FLAGSHIP:nomad_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "nomad_flagship",
+        "additional_components": [
+            "TECH:m2"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "FLAGSHIP:obsidian_flagship",
+        "category": "FLAGSHIP",
+        "item_id": "obsidian_flagship",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HERO:augershero",
+        "category": "HERO",
+        "item_id": "augershero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:axishero",
+        "category": "HERO",
+        "item_id": "axishero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:bastionhero",
+        "category": "HERO",
+        "item_id": "bastionhero",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HERO:belkoseahero",
+        "category": "HERO",
+        "item_id": "belkoseahero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:cabalhero",
+        "category": "HERO",
+        "item_id": "cabalhero",
+        "undraftable": true,
+        "alternate_text": "[Franken only] ACTION: Each other player rolls a die for each of their non-fighter ships that are in or adjacent to a system that contains your Space Dock; on a 1-3, capture that unit. If this causes a player's ground forces or fighters to be removed, also capture those units. Then, purge this card.",
+        "source": "pok"
+    },
+    {
+        "id": "HERO:edynhero",
+        "category": "HERO",
+        "item_id": "edynhero",
+        "alternate_text": "[Franken only] Midir - Living Will (The Edyn Mandate) | Golden Order - Peace Eternal\nACTION: For each system with at least one of your mechs on the game board, draw 1 agenda. Reveal and resolve each agenda in any order as if you had cast 1 vote for an outcome of your choice. Other players cannot resolve abilities during this action.\n\nThen, purge this card.",
+        "source": "ds"
+    },
+    {
+        "id": "HERO:firmamenthero",
+        "category": "HERO",
+        "item_id": "firmamenthero",
+        "additional_components": [
+            "PLOT:extract",
+            "ABILITY:puppetsoftheblade"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HERO:gheminaherolady",
+        "category": "HERO",
+        "item_id": "gheminaherolady",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:gheminaherolord",
+        "category": "HERO",
+        "item_id": "gheminaherolord",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:kjalengardhero",
+        "category": "HERO",
+        "item_id": "kjalengardhero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:lizhohero",
+        "category": "HERO",
+        "item_id": "lizhohero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:naaluhero",
+        "category": "HERO",
+        "item_id": "naaluhero",
+        "optional_swaps": [
+            "BREAKTHROUGH:naalubt"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "HERO:nivynhero",
+        "category": "HERO",
+        "item_id": "nivynhero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:obsidianhero",
+        "category": "HERO",
+        "item_id": "obsidianhero",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HERO:olradinhero",
+        "category": "HERO",
+        "item_id": "olradinhero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:pharadnhero",
+        "category": "HERO",
+        "item_id": "pharadnhero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:throneshero",
+        "category": "HERO",
+        "item_id": "throneshero",
+        "additional_components": [
+            "ABILITY:traces_of_ruin"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "HERO:vadenhero",
+        "category": "HERO",
+        "item_id": "vadenhero",
+        "optional_swaps": [
+            "BREAKTHROUGH:vadenbt"
+        ],
+        "additional_components": [
+            "ABILITY:binding_debts",
+            "ABILITY:fine_print"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "HERO:veldyrhero",
+        "category": "HERO",
+        "item_id": "veldyrhero",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HERO:xxchahero",
+        "category": "HERO",
+        "item_id": "xxchahero",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HOMESYSTEM:crimson",
+        "category": "HOMESYSTEM",
+        "item_id": "crimson",
+        "optional_swaps": [
+            "COMMANDER:crimsoncommander",
+            "BREAKTHROUGH:crimsonbt"
+        ],
+        "additional_components": [
+            "ABILITY:sorrow"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HOMESYSTEM:firmament",
+        "category": "HOMESYSTEM",
+        "item_id": "firmament",
+        "additional_components": [
+            "PN:blackops",
+            "PLOT:mutated_enervate",
+            "ABILITY:plotsplots",
+            "ABILITY:puppetsoftheblade"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HOMESYSTEM:freesystems",
+        "category": "HOMESYSTEM",
+        "item_id": "freesystems",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HOMESYSTEM:ghost",
+        "category": "HOMESYSTEM",
+        "item_id": "ghost",
+        "additional_components": [
+            "ABILITY:creuss_gate"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "HOMESYSTEM:ghoti",
+        "category": "HOMESYSTEM",
+        "item_id": "ghoti",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HOMESYSTEM:keleresa",
+        "category": "HOMESYSTEM",
+        "item_id": "keleresa",
+        "undraftable": true,
+        "source": "codex3"
+    },
+    {
+        "id": "HOMESYSTEM:keleresm",
+        "category": "HOMESYSTEM",
+        "item_id": "keleresm",
+        "undraftable": true,
+        "source": "codex3"
+    },
+    {
+        "id": "HOMESYSTEM:keleresx",
+        "category": "HOMESYSTEM",
+        "item_id": "keleresx",
+        "undraftable": true,
+        "source": "codex3"
+    },
+    {
+        "id": "HOMESYSTEM:nivyn",
+        "category": "HOMESYSTEM",
+        "item_id": "nivyn",
+        "optional_swaps": [
+            "ABILITY:celestial_guides"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "HOMESYSTEM:obsidian",
+        "category": "HOMESYSTEM",
+        "item_id": "obsidian",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "HOMESYSTEM:pharadn",
+        "category": "HOMESYSTEM",
+        "item_id": "pharadn",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HOMESYSTEM:uydai",
+        "category": "HOMESYSTEM",
+        "item_id": "uydai",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "HOMESYSTEM:zelian",
+        "category": "HOMESYSTEM",
+        "item_id": "zelian",
+        "additional_components": [
+            "ABILITY:paranoia"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "MECH:bastion_mech",
+        "category": "MECH",
+        "item_id": "bastion_mech",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "MECH:bentor_mech",
+        "category": "MECH",
+        "item_id": "bentor_mech",
+        "additional_components": [
+            "ABILITY:ancient_blueprints"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "MECH:crimson_mech",
+        "category": "MECH",
+        "item_id": "crimson_mech",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "MECH:deepwrought_mech",
+        "category": "MECH",
+        "item_id": "deepwrought_mech",
+        "additional_components": [
+            "ABILITY:researchteam"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "MECH:edyn_mech",
+        "category": "MECH",
+        "item_id": "edyn_mech",
+        "optional_swaps": [
+            "ABILITY:radiance",
+            "ABILITY:decree"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "MECH:firmament_mech",
+        "category": "MECH",
+        "item_id": "firmament_mech",
+        "additional_components": [
+            "PLOT:mutated_extract",
+            "ABILITY:puppetsoftheblade",
+            "ABILITY:plotsplots"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "MECH:freesystems_mech",
+        "category": "MECH",
+        "item_id": "freesystems_mech",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "MECH:jolnar_mech",
+        "category": "MECH",
+        "item_id": "jolnar_mech",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "MECH:kjalengard_mech",
+        "category": "MECH",
+        "item_id": "kjalengard_mech",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "MECH:kollecc_mech",
+        "category": "MECH",
+        "item_id": "kollecc_mech",
+        "additional_components": [
+            "ABILITY:shroud_of_lith"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "MECH:kryxos_mech",
+        "category": "MECH",
+        "item_id": "kryxos_mech",
+        "additional_components": [
+            "TECH:thkryxosmf"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "MECH:lizho_mech",
+        "category": "MECH",
+        "item_id": "lizho_mech",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "MECH:mahact_mech",
+        "category": "MECH",
+        "item_id": "mahact_mech",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "MECH:mahact_mech_y",
+        "category": "MECH",
+        "item_id": "mahact_mech_y",
+        "always_add_to_pool": true,
+        "additional_components": [
+            "ABILITY:primacy"
+        ],
+        "source": "franken"
+    },
+    {
+        "id": "MECH:muaat_mech",
+        "category": "MECH",
+        "item_id": "muaat_mech",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "MECH:nekro_mech",
+        "category": "MECH",
+        "item_id": "nekro_mech",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "MECH:nivyn_mech",
+        "category": "MECH",
+        "item_id": "nivyn_mech",
+        "optional_swaps": [
+            "HERO:nivynhero",
+            "BREAKTHROUGH:nivynbt"
+        ],
+        "additional_components": [
+            "ABILITY:singularity_point",
+            "TECH:dsnivymf"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "MECH:obsidian_mech",
+        "category": "MECH",
+        "item_id": "obsidian_mech",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "MECH:olradin_mech",
+        "category": "MECH",
+        "item_id": "olradin_mech",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "MECH:rohdhna_mech",
+        "category": "MECH",
+        "item_id": "rohdhna_mech",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "MECH:sol_mech",
+        "category": "MECH",
+        "item_id": "sol_mech",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "MECH:tnelis_mech",
+        "category": "MECH",
+        "item_id": "tnelis_mech",
+        "additional_components": [
+            "ABILITY:stealth_insertion"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "MECH:toldar_mech",
+        "category": "MECH",
+        "item_id": "toldar_mech",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "MECH:vaden_mech",
+        "category": "MECH",
+        "item_id": "vaden_mech",
+        "additional_components": [
+            "ABILITY:fine_print"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "MECH:yin_mech",
+        "category": "MECH",
+        "item_id": "yin_mech",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "MECH:yssaril_mech",
+        "category": "MECH",
+        "item_id": "yssaril_mech",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "PLOT:assail",
+        "category": "PLOT",
+        "item_id": "assail",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:enervate",
+        "category": "PLOT",
+        "item_id": "enervate",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:extract",
+        "category": "PLOT",
+        "item_id": "extract",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:mutated_assail",
+        "category": "PLOT",
+        "item_id": "mutated_assail",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:mutated_enervate",
+        "category": "PLOT",
+        "item_id": "mutated_enervate",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:mutated_extract",
+        "category": "PLOT",
+        "item_id": "mutated_extract",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:mutated_seethe",
+        "category": "PLOT",
+        "item_id": "mutated_seethe",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:mutated_siphon",
+        "category": "PLOT",
+        "item_id": "mutated_siphon",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:seethe",
+        "category": "PLOT",
+        "item_id": "seethe",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PLOT:siphon",
+        "category": "PLOT",
+        "item_id": "siphon",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PN:antivirus",
+        "category": "PN",
+        "item_id": "antivirus",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "PN:blackops",
+        "category": "PN",
+        "item_id": "blackops",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PN:blood_pact",
+        "category": "PN",
+        "item_id": "blood_pact",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "PN:dark_pact",
+        "category": "PN",
+        "item_id": "dark_pact",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "PN:dspnauge",
+        "category": "PN",
+        "item_id": "dspnauge",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "PN:dspnveld1",
+        "category": "PN",
+        "item_id": "dspnveld1",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "PN:dspnveld2",
+        "category": "PN",
+        "item_id": "dspnveld2",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "PN:dspnveld3",
+        "category": "PN",
+        "item_id": "dspnveld3",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "PN:dspnveld4",
+        "category": "PN",
+        "item_id": "dspnveld4",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "PN:gift",
+        "category": "PN",
+        "item_id": "gift",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "PN:malevolency",
+        "category": "PN",
+        "item_id": "malevolency",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PN:pop",
+        "category": "PN",
+        "item_id": "pop",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "PN:raisethestandard",
+        "category": "PN",
+        "item_id": "raisethestandard",
+        "additional_components": [
+            "ABILITY:galvanize"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "PN:thpnmyrrc",
+        "category": "PN",
+        "item_id": "thpnmyrrc",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "PN:thpnmyrrh",
+        "category": "PN",
+        "item_id": "thpnmyrrh",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "PN:thpnmyrri",
+        "category": "PN",
+        "item_id": "thpnmyrri",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "PN:thpnrevenant",
+        "category": "PN",
+        "item_id": "thpnrevenant",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "PN:thpnthrones",
+        "category": "PN",
+        "item_id": "thpnthrones",
+        "additional_components": [
+            "ABILITY:traces_of_ruin"
+        ],
+        "source": "theodisi"
+    },
+    {
+        "id": "STARTINGFLEET:ghoti",
+        "category": "STARTINGFLEET",
+        "item_id": "ghoti",
+        "optional_swaps": [
+            "FLAGSHIP:ghoti_flagship"
+        ],
+        "additional_components": [
+            "ABILITY:mobile_command"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "STARTINGFLEET:khrask",
+        "category": "STARTINGFLEET",
+        "item_id": "khrask",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "STARTINGFLEET:kryxos",
+        "category": "STARTINGFLEET",
+        "item_id": "kryxos",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "STARTINGFLEET:muaat",
+        "category": "STARTINGFLEET",
+        "item_id": "muaat",
+        "optional_swaps": [
+            "AGENT:muaatagent"
+        ],
+        "alternate_text": "1 warsun (or flagship if no warsun tech)\n2 fighters\n4 infantry\n1 space dock",
+        "source": "pok"
+    },
+    {
+        "id": "STARTINGFLEET:obsidian",
+        "category": "STARTINGFLEET",
+        "item_id": "obsidian",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "STARTINGTECH:aeterna",
+        "category": "STARTINGTECH",
+        "item_id": "aeterna",
+        "alternate_text": "Choose up to 2 technologies with 0 prerequisites owned by no other player.",
+        "source": "theodisi"
+    },
+    {
+        "id": "STARTINGTECH:arcanum",
+        "category": "STARTINGTECH",
+        "item_id": "arcanum",
+        "alternate_text": "Choose 2 technologies in the same color with no prerequisites.",
+        "source": "theodisi"
+    },
+    {
+        "id": "STARTINGTECH:obsidian",
+        "category": "STARTINGTECH",
+        "item_id": "obsidian",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "STARTINGTECH:revenant",
+        "category": "STARTINGTECH",
+        "item_id": "revenant",
+        "alternate_text": "Choose 2 technologies in different colors with 1 total prerequisite.",
+        "source": "theodisi"
+    },
+    {
+        "id": "STARTINGTECH:sardakk",
+        "category": "STARTINGTECH",
+        "item_id": "sardakk",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "TECH:dsatoky",
+        "category": "TECH",
+        "item_id": "dsatoky",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dsbelkff",
+        "category": "TECH",
+        "item_id": "dsbelkff",
+        "optional_swaps": [
+            "HERO:belkoseahero"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dskjalg",
+        "category": "TECH",
+        "item_id": "dskjalg",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dslaner",
+        "category": "TECH",
+        "item_id": "dslaner",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dsmirvpds",
+        "category": "TECH",
+        "item_id": "dsmirvpds",
+        "additional_components": [
+            "ABILITY:privileged_citizenry"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dsmykosd",
+        "category": "TECH",
+        "item_id": "dsmykosd",
+        "optional_swaps": [
+            "BREAKTHROUGH:mykomentoribt"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dsnivymf",
+        "category": "TECH",
+        "item_id": "dsnivymf",
+        "undraftable": true,
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dspharinf",
+        "category": "TECH",
+        "item_id": "dspharinf",
+        "optional_swaps": [
+            "COMMANDER:pharadncommander",
+            "HERO:pharadnhero",
+            "BREAKTHROUGH:pharadnbt"
+        ],
+        "additional_components": [
+            "ABILITY:ancient_empire",
+            "ABILITY:mark_of_pharadn"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dsrohdws",
+        "category": "TECH",
+        "item_id": "dsrohdws",
+        "optional_swaps": [
+            "BREAKTHROUGH:rohdhnabt"
+        ],
+        "additional_components": [
+            "ABILITY:orbital_foundries"
+        ],
+        "source": "ds"
+    },
+    {
+        "id": "TECH:dt2",
+        "category": "TECH",
+        "item_id": "dt2",
+        "optional_swaps": [
+            "COMMANDER:cabalcommander"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "TECH:exile2",
+        "category": "TECH",
+        "item_id": "exile2",
+        "optional_swaps": [
+            "FLAGSHIP:crimson_flagship",
+            "MECH:crimson_mech"
+        ],
+        "additional_components": [
+            "ABILITY:incursion"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:hydrothermal",
+        "category": "TECH",
+        "item_id": "hydrothermal",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:iihq",
+        "category": "TECH",
+        "item_id": "iihq",
+        "undraftable": true,
+        "source": "codex3"
+    },
+    {
+        "id": "TECH:linkship2",
+        "category": "TECH",
+        "item_id": "linkship2",
+        "additional_components": [
+            "ABILITY:miniaturization"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:lw2",
+        "category": "TECH",
+        "item_id": "lw2",
+        "additional_components": [
+            "ABILITY:mitosis"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "TECH:m2",
+        "category": "TECH",
+        "item_id": "m2",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "TECH:mr",
+        "category": "TECH",
+        "item_id": "mr",
+        "additional_components": [
+            "ABILITY:gashlai_physiology"
+        ],
+        "source": "pok"
+    },
+    {
+        "id": "TECH:parasite-firm",
+        "category": "TECH",
+        "item_id": "parasite-firm",
+        "additional_components": [
+            "PLOT:mutated_assail",
+            "ABILITY:puppetsoftheblade",
+            "ABILITY:plotsplots"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:parasite-obs",
+        "category": "TECH",
+        "item_id": "parasite-obs",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:planesplitter-firm",
+        "category": "TECH",
+        "item_id": "planesplitter-firm",
+        "additional_components": [
+            "PLOT:seethe",
+            "ABILITY:puppetsoftheblade",
+            "ABILITY:plotsplots"
+        ],
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:planesplitter-obs",
+        "category": "TECH",
+        "item_id": "planesplitter-obs",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:proxima",
+        "category": "TECH",
+        "item_id": "proxima",
+        "undraftable": true,
+        "source": "thunders_edge"
+    },
+    {
+        "id": "TECH:thkryxosfs",
+        "category": "TECH",
+        "item_id": "thkryxosfs",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "TECH:thkryxosmf",
+        "category": "TECH",
+        "item_id": "thkryxosmf",
+        "undraftable": true,
+        "source": "theodisi"
+    },
+    {
+        "id": "TECH:vax",
+        "category": "TECH",
+        "item_id": "vax",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "TECH:vay",
+        "category": "TECH",
+        "item_id": "vay",
+        "undraftable": true,
+        "source": "pok"
+    },
+    {
+        "id": "TECH:vtx",
+        "category": "TECH",
+        "item_id": "vtx",
+        "undraftable": true,
+        "source": "pok"
+    }
+]

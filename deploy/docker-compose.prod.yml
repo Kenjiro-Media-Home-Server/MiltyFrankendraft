@@ -1,17 +1,33 @@
 services:
-  app:
-    build:
-      context: .
-      dockerfile: deploy/app/Dockerfile
-      target: production
-    container_name: milty-app
-    restart: unless-stopped
-    tty: true
-    working_dir: /code
-    healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost" ]
-      interval: 1m30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
-      start_interval: 5s
+    app:
+        build:
+            context: .
+            dockerfile: deploy/app/Dockerfile
+            target: production
+        container_name: milty-app
+        restart: unless-stopped
+        tty: true
+        working_dir: /code
+        ports:
+            # Bound to loopback on purpose: the host's Apache terminates TLS and reverse-proxies
+            # to this. Nothing about this container should be reachable from outside the machine.
+            - "127.0.0.1:${APP_PORT:-8091}:80"
+        volumes:
+            # Drafts are the only state the app has, and they hold every player's passkey. They
+            # live in a named volume outside /code so they survive a redeploy and are never
+            # reachable through the web root.
+            - drafts:/srv/drafts
+            # The app reads its settings through phpdotenv from a .env file, and PHP-FPM does not
+            # pass Docker's env_file through to its workers — so the file is mounted rather than
+            # baked into the image (.dockerignore keeps it out) or injected as process env.
+            - ./.env:/code/.env:ro
+        healthcheck:
+            test: [ "CMD", "curl", "-f", "http://localhost" ]
+            interval: 1m30s
+            timeout: 10s
+            retries: 3
+            start_period: 40s
+            start_interval: 5s
+
+volumes:
+    drafts:

@@ -1,5 +1,6 @@
 (common_config) {
-    root /app/public
+    root * /code
+
     log {
         output stdout
     }
@@ -11,7 +12,6 @@
    }
 
     @options method OPTIONS
-    respond @options 204
 
     @svg {
          file
@@ -20,10 +20,29 @@
 
     header @svg Content-Security-Policy "script-src 'none'"
 
-    php_fastcgi localhost:9000
-    file_server
+    # The application is served straight out of the repository root, so without this everything
+    # in it is downloadable: the .env file, the git history, the source, and — worst — the draft
+    # JSON files, which contain every draft's admin passkey and each player's passkey.
+    # data/ is only ever read server-side by PHP, never fetched by the browser.
+    @blocked {
+        path /.env /.env.* /.git /.git/* /.gitignore /.htaccess /.dockerignore
+        path /.php-cs-fixer.php /.php-cs-fixer.cache /.github /.github/*
+        path /app /app/* /bin /bin/* /data /data/* /deploy /deploy/*
+        path /docs /docs/* /tmp /tmp/* /vendor /vendor/* /node_modules /node_modules/*
+        path /composer.json /composer.lock /phpunit.xml /phpstan.neon /package.json /package-lock.json
+        path *.md *.scss *.map *.yml *.yaml *.lock *.dist *.sh
+    }
+
+    # An explicit route so the deny is evaluated before the file server and PHP get a chance;
+    # outside a route block Caddy's own directive order would run file_server first.
+    route {
+        respond @options 204
+        respond @blocked 404
+        php_fastcgi localhost:9000
+        file_server
+    }
+
     encode zstd gzip
-    root * /code
 
     tls internal
 }

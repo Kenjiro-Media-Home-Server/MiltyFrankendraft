@@ -20,6 +20,11 @@ RUN addgroup -g 1000 -S app \
   && adduser -u 1000 -S app -G app \
   && chown app:app /code
 
+# Draft storage lives outside the web root. Creating it here with the right owner matters:
+# Docker seeds a fresh named volume from the image's directory, so a volume mounted at this
+# path inherits app:app instead of coming up root-owned and unwritable.
+RUN mkdir -p /srv/drafts && chown app:app /srv/drafts
+
 RUN apk --update --no-cache add \
     supervisor \
     curl \

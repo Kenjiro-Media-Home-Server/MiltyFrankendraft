@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -266,14 +267,16 @@ h4:first-child {
   left: 0px;
   background-color: #4b60af;
   padding: 15px;
-  transform: translate(0, -100%);
-  transition: transform 300ms ease-in-out;
 }
 .status p, .status span {
   color: #FEFCF8;
 }
 .status span {
   font-weight: 600;
+}
+.status {
+  transform: translate(0, -100%);
+  transition: transform 300ms ease-in-out;
 }
 .status.show {
   transform: translate(0, 0);
@@ -740,12 +743,14 @@ h4:first-child {
   height: 100%;
   transform: translate(-50%, -50%);
   font-size: 6.5vw;
-  position: relative;
 }
 @media (min-width: 1500px) {
   .map {
     font-size: 100px;
   }
+}
+.map {
+  position: relative;
 }
 .map .tile {
   position: absolute;
@@ -1491,7 +1496,9 @@ strong {
   .container {
     background-color: #16232c;
   }
-  p, label, span, a {
+  /* h5/h6 were never part of this rule because nothing used them until the Franken
+     component boxes did; without them they fall back to the browser default black. */
+  p, label, span, a, h5, h6 {
     color: #FEFCF8;
   }
   input[type=text], input[type=number], textarea {
@@ -1589,6 +1596,657 @@ strong {
     padding: 0;
     margin: 0;
   }
+}
+/* --- Draft mode switch (Milty / Franken) ------------------------------- */
+.mode-switch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+.mode-switch .mode-option {
+  flex: 1 1 220px;
+  text-align: left;
+  padding: 1em 1.2em;
+  font-size: 1.1em;
+  color: #16232c;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid #16232c;
+  border-radius: 12px;
+  box-shadow: 0px -1px 0px 1px inset rgba(0, 0, 0, 0.1);
+}
+.mode-switch .mode-option span {
+  display: block;
+  margin-top: 0.4em;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+  color: inherit;
+  opacity: 0.75;
+}
+.mode-switch .mode-option.active {
+  color: #FEFCF8;
+  background-color: #1c3148;
+  box-shadow: none;
+}
+
+.mode-section.inactive {
+  display: none;
+}
+
+body.mode-franken .milty-only {
+  display: none !important;
+}
+
+/* --- Franken settings -------------------------------------------------- */
+.sources {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sources label.check {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .sources label.check {
+    width: 100%;
+  }
+}
+.sources .source-count {
+  font-size: 0.85em;
+  opacity: 0.6;
+}
+
+#franken-advanced {
+  display: none;
+}
+
+#franken-more {
+  margin-bottom: 20px;
+}
+
+.franken-limits {
+  width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+.franken-limits th, .franken-limits td {
+  padding: 6px 10px;
+  text-align: left;
+  color: #16232c;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.franken-limits th {
+  font-weight: 600;
+}
+.franken-limits th + th, .franken-limits td + td {
+  width: 6em;
+  text-align: right;
+}
+.franken-limits tfoot td {
+  font-weight: 600;
+  border-bottom: none;
+}
+.franken-limits .category-code {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.franken-limits .franken-limit-input {
+  width: 100%;
+  max-width: 5em;
+  text-align: right;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mode-switch .mode-option {
+    color: #FEFCF8;
+    background-color: #16232c;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .mode-switch .mode-option.active {
+    color: #FEFCF8;
+    background-color: #38618f;
+  }
+  .franken-limits th, .franken-limits td {
+    color: #FEFCF8;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+/* ---------------------------------------------------------------- Franken draft */
+.subtle {
+  font-weight: 300;
+  opacity: 0.65;
+  font-size: 0.85em;
+}
+
+.warning {
+  color: #b3401f;
+}
+
+.config-table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 640px;
+}
+.config-table td {
+  padding: 4px 12px 4px 0;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(22, 35, 44, 0.1);
+}
+.config-table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.franken-players .franken-player.is-ready {
+  border-color: #38618f;
+}
+.franken-players .franken-player .franken-player-state {
+  font-size: 0.9em;
+}
+.franken-players .franken-player .ready-state {
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.hand-category {
+  margin-bottom: 18px;
+  /* same heading treatment as the section headers elsewhere on the page, a size up */
+}
+.hand-category h5 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 1.35em;
+  font-weight: normal;
+  text-transform: uppercase;
+  /* the lighter blue the other section headers on this page use */
+  color: #38618f;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid rgba(22, 35, 44, 0.15);
+  margin-bottom: 8px;
+}
+.hand-category.complete h5 {
+  opacity: 0.5;
+}
+
+.hand-block {
+  margin-bottom: 24px;
+}
+
+.other-faction-content .slice-map-wrap {
+  margin-top: 10px;
+}
+
+.swap-summary {
+  margin: 0 0 10px;
+  padding-left: 1.2em;
+}
+
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .component-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Same box treatment as the bag options, at the tighter spacing this summary uses. */
+.component-card {
+  padding: 8px 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 0.9em;
+}
+.component-card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.component-card h6 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.component-card .origin {
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+.component-card .rules {
+  margin-bottom: 4px;
+}
+.component-card .extra {
+  font-size: 0.85em;
+  color: #38618f;
+}
+.component-card .source {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  margin-top: 4px;
+}
+.component-card.dimmed {
+  opacity: 0.45;
+}
+.component-card .put-back {
+  font-size: 0.85em;
+}
+
+.swap-choice {
+  border-left: 3px solid #38618f;
+  padding-left: 10px;
+  margin-bottom: 14px;
+}
+.swap-choice label {
+  display: block;
+  cursor: pointer;
+}
+
+.tile-noimage {
+  display: inline-block;
+  padding: 12px 6px;
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+
+.franken-status {
+  background: rgba(28, 49, 72, 0.08);
+  border-left: 3px solid #38618f;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+}
+.franken-status p {
+  margin: 0;
+}
+
+.slice-home-label {
+  font-size: 0.85em;
+  margin-top: 6px;
+  max-width: 240px;
+}
+
+/* Bag contents, styled to match the faction options in the Milty draft: one section per
+   category, then a row of equally sized boxes. */
+/* What you took from the bag you are holding right now, above the bag itself. Drawn with the
+   same boxes as the bag, so it needs none of the bag section's leading padding. */
+#draft #round-picks .franken-options {
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+
+#draft .franken-options {
+  padding-top: 20px;
+  /* A category folded away keeps its header, so the page stays navigable. */
+}
+#draft .franken-options.collapsed .options {
+  display: none;
+}
+#draft .franken-options h3 .collapse-toggle {
+  background: none;
+  border: 0;
+  padding: 0 6px 0 0;
+  margin: 0;
+  font-size: 0.8em;
+  line-height: 1;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.6;
+}
+#draft .franken-options h3 .collapse-toggle:hover {
+  opacity: 1;
+}
+#draft .franken-options h3 .picks-left {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.75;
+  margin-left: 8px;
+}
+#draft .franken-options h3 .picks-left.complete {
+  opacity: 0.45;
+}
+#draft .franken-options {
+  /* A grid rather than the flex row Milty uses, so that every box on every row is the same
+     size as the largest one instead of only matching its own row. */
+}
+#draft .franken-options .options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  margin: 0;
+  align-items: stretch;
+}
+#draft .franken-options .options > div {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  #draft .franken-options .options {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+#draft .franken-options .franken-option {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+}
+#draft .franken-options .franken-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#draft .franken-options .franken-option.dimmed {
+  opacity: 0.45;
+}
+#draft .franken-options .franken-option {
+  /* A pick stays in the list rather than vanishing out of it, so the bag keeps the shape
+     you were reading. Marked, not removed, and still one click from going back. */
+}
+#draft .franken-options .franken-option.taken {
+  background-color: rgba(0, 0, 0, 0.02);
+  outline: 2px solid #38618f;
+  outline-offset: -2px;
+}
+#draft .franken-options .franken-option .taken-mark {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #38618f;
+}
+#draft .franken-options .franken-option .taken-mark .put-back {
+  text-decoration: none;
+  font-size: 1.4em;
+  line-height: 1;
+  vertical-align: -2px;
+  padding-left: 4px;
+}
+#draft .franken-options .franken-option {
+  /* the inner wrapper mirrors the faction markup, and pins the footer to the bottom so
+     boxes with short text still line their buttons up */
+}
+#draft .franken-options .franken-option > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#draft .franken-options .franken-option .option-name {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+#draft .franken-options .franken-option .option-origin {
+  font-style: italic;
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+#draft .franken-options .franken-option .option-text {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+#draft .franken-options .franken-option .option-extra {
+  font-size: 0.85em;
+  color: #38618f;
+  margin-bottom: 4px;
+}
+#draft .franken-options .franken-option .option-meta {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+#draft .franken-options .franken-option {
+  /* Milty hides button.draft by default and reveals it from its own JS; here the box is
+     only rendered with a button when the pick is actually allowed. */
+}
+#draft .franken-options .franken-option button.draft {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* A clear break between the bag you are picking from and the summary of what you hold. */
+.section-divider {
+  border: 0;
+  border-top: 1px solid rgba(22, 35, 44, 0.25);
+  margin: 30px 0 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-divider {
+    border-top-color: rgba(254, 252, 248, 0.25);
+  }
+}
+.pass-wrap {
+  margin: 10px 0;
+}
+
+/* Slice geometry: the same hex layout the map uses, shared by the interactive builder (#slice-
+   builder) and the read-only preview shown in "everyone's factions" once the draft is done — both
+   render the exact same markup, so both need the sizing/positioning regardless of which container
+   they sit in. Without this, an instance outside #slice-builder has no positioned, sized ancestor
+   for its absolutely-positioned tiles to lay out against, and ends up pinned across the whole page. */
+/* One tile size for the whole builder: the thumbnails you drag from and the hexes on the map are
+   deliberately identical, so a tile does not change size when you place it. */
+.slice-map-wrap {
+  position: relative;
+  /* wide enough for the three hex columns plus the labels' worth of breathing room */
+  width: 372px;
+  height: 421.6px;
+  /* .map sizes its hexes off font-size, and a tile image is 2em wide */
+}
+.slice-map-wrap .map {
+  font-size: 62px;
+}
+.slice-map-wrap .map img.zoom {
+  width: 220px;
+}
+
+/**
+ * A spot is a zero-sized point, exactly like a tile on the real map: .map positions the point
+ * with left/top, and the tile image centres itself on it. Giving the spot a width and height
+ * instead would centre the *box* on the point while the image stayed on the box corner, which
+ * is what made the empty markers sit away from where the tile actually lands.
+ */
+.slice-slot,
+.slice-home {
+  /* an invisible hit area the size of a tile, so an empty spot is still easy to click */
+}
+.slice-slot::before,
+.slice-home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2em;
+  height: 1.74em;
+  transform: translate(-50%, -50%);
+}
+.slice-slot,
+.slice-home {
+  /* the spot number, on the exact point the tile will be centred on */
+}
+.slice-slot .slot-number,
+.slice-home .slot-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: #38618f;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  z-index: 200;
+}
+.slice-slot.filled .slot-number,
+.slice-home.filled .slot-number {
+  /* clear of the art once a tile is in place */
+  transform: translate(-50%, 34.72px);
+  font-size: 17px;
+  color: #FEFCF8;
+  opacity: 0.85;
+}
+
+#slice-builder {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#slice-builder #slice-pool {
+  flex: 0 0 auto;
+  order: 1;
+}
+#slice-builder .slice-map-wrap {
+  flex: 0 0 auto;
+  order: 2;
+}
+#slice-builder {
+  /* Only the interactive builder's own tiles look clickable or glow when selected — the
+     read-only preview in "everyone's factions" reuses the same markup for neither. */
+}
+#slice-builder .slice-slot,
+#slice-builder .slice-home {
+  cursor: pointer;
+  /* selection is a glow rather than a box, so nothing shifts or boxes anything in */
+}
+#slice-builder .slice-slot.selected,
+#slice-builder .slice-home.selected {
+  z-index: 500;
+}
+#slice-builder .slice-slot.selected .slot-number,
+#slice-builder .slice-home.selected .slot-number {
+  color: #FEFCF8;
+  opacity: 1;
+}
+#slice-builder .slice-slot.selected img:not(.zoom),
+#slice-builder .slice-home.selected img:not(.zoom) {
+  filter: drop-shadow(0 0 7px #38618f) brightness(1.12);
+}
+#slice-builder .slice-home {
+  cursor: default;
+}
+
+/* The drafted tiles you pick from, sized to match the tiles on the slice map. */
+.tile-pool {
+  display: grid;
+  /* two fixed columns, so the thumbnails keep exactly the map's tile size */
+  grid-template-columns: repeat(2, 124px);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tile-option {
+  text-align: center;
+  /* an outline rather than a border, so selecting a tile cannot change its size */
+  border-radius: 4px;
+  cursor: pointer;
+  width: 124px;
+}
+.tile-option img {
+  width: 100%;
+  display: block;
+}
+.tile-option {
+  /* a glow, to match the slice map and keep boxes off the tiles */
+}
+.tile-option.selected img {
+  filter: drop-shadow(0 0 7px #38618f) brightness(1.12);
+}
+.tile-option.used {
+  opacity: 0.35;
+}
+.tile-option .tile-ring {
+  display: block;
+  font-size: 0.75em;
+  opacity: 0.6;
+  margin-top: 2px;
+}
+
+/* Tile boxes show the tile itself, with the same hover zoom the map view uses. Shared by the bag
+   options and the smaller summary cards. */
+.option-tile {
+  position: relative;
+  margin: 8px auto;
+  width: 140px;
+  max-width: 100%;
+}
+.option-tile img {
+  width: 100%;
+  display: block;
+}
+.option-tile img.zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease-in-out;
+}
+.option-tile:hover {
+  z-index: 999;
+}
+.option-tile:hover img.zoom {
+  opacity: 1;
+}
+
+/* the box has to be able to sit above its neighbours while the zoom is showing */
+.franken-option:hover,
+.component-card:hover {
+  position: relative;
+  z-index: 999;
+}
+
+/* the summary cards are narrower than the bag boxes, so their tiles are smaller */
+.component-card .option-tile {
+  width: 104px;
+  margin: 6px auto;
+}
+
+/* Grants and swaps are buttons rather than plain text: each one opens the component it names, so
+   "can be exchanged for X" can be read as X rather than guessed at. */
+button.peek {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+button.peek:hover {
+  text-decoration: underline solid;
+}
+
+#peek-popup .content {
+  max-width: 420px;
+}
+#peek-popup .content .component-card {
+  margin: 0 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

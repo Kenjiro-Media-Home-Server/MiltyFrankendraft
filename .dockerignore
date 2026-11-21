@@ -1,0 +1,24 @@
+# Keep secrets, history and local state out of the production image. The production stage does
+# `COPY . /code`, so anything not excluded here is baked in and served from the web root.
+.git
+.github
+.env
+.env.*
+!.env.example
+
+# Draft data lives in a volume outside the web root in production.
+data/drafts
+
+tmp
+vendor
+node_modules
+caddy-cert.crt
+
+# Dev-only tooling and docs.
+docs
+.php-cs-fixer.php
+.php-cs-fixer.cache
+.phpunit.cache
+phpunit.xml
+phpstan.neon
+css/style.css.map
