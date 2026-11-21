@@ -4,6 +4,7 @@ services:
             context: .
             dockerfile: deploy/app/Dockerfile
             target: production
+        image: ghcr.io/kenjiro-media-home-server/miltyfrankendraft:${IMAGE_TAG:-main}
         container_name: milty-app
         restart: unless-stopped
         tty: true
